@@ -1,0 +1,575 @@
+body {
+  margin: 0;
+  background-color:rgb(36, 55, 75);
+  color:white;
+  min-width: 1500px;
+  overflow: hidden;
+}
+
+.Contents{
+  width: 100%;
+  height: 100%;
+  min-width: 1000px;
+  min-height: 561px;
+  clear:none;
+  box-sizing: border-box;
+}
+
+
+.DialBox {
+  width: 20%;
+  height: 100vh;
+  min-height: 561px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 5;
+  float:left;
+ }
+
+ .DialBG{
+  background-image: url(./components/images/paper1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:110%;
+  height:100%;
+  position:absolute;
+  top:0;
+  overflow: visible;
+ }
+
+.dial {
+  width: 30%;
+  padding: 5%;
+  position:sticky;
+  margin-top:75%;
+  margin-left: 25%;
+}
+
+.dial * {
+  display: block;
+  margin:auto;
+}
+
+.reel {
+  width: 65%;
+  position:absolute;
+  top: 2%;
+  margin: 5%;
+  transition: 0.3s;
+  }
+
+.dial button{
+  z-index: 4;
+  
+}
+.dial button:hover{
+  filter:invert(50%);
+  transition: 0.1s;
+}
+
+button img:active{
+  transform: scale(1.1);
+  transition: 0.1s;
+ }
+
+ .carrot {
+  width:50px;
+  height:45px;
+ }
+
+.upArrow {
+  background-color:transparent;
+  position: relative;
+  min-width: 50px;
+  font-size: x-large;
+  cursor:pointer;
+  border: transparent;
+  transform:rotate(180deg);
+ 
+   
+}
+
+.spacer{
+  padding: 40%;
+}
+
+
+.downArrow {
+  background-color: transparent;
+  position: relative;
+  min-width: 50px;
+  cursor:pointer;
+  border: transparent;
+}
+
+.reel img{
+  width:100%;
+  height:100%;
+  display:block;
+  margin-top: 50%;
+}
+
+.MainBody{
+  /* border: 4px dashed purple; */
+  width: 80%;
+  height: 100vh;
+  box-sizing: border-box;
+  float: left;
+}
+
+
+.BackgroundImage {
+  width: 105%;
+  height:100%;
+  min-width: 1424px;
+  min-height: 800px;
+  overflow: hidden;
+  margin-left: -5%;
+  position: sticky;
+  z-index: 1;
+  }
+
+.BackgroundImageContainer {
+  height:100%;
+  box-sizing: border-box;
+}
+
+
+
+.TitleHeader {
+  background:transparent;
+  position: fixed;
+  z-index: 2;
+  margin-left: 12%;
+  min-width: 400px;
+  top:-8%;
+  width: 53.28%;
+  
+}
+
+.BBTitle {
+  transform: scale(0.9);
+  margin-top: -2%;
+  width:100%;
+}
+
+.ERTitle {
+  transform: scale(0.9);
+  margin-top: -2%;
+  width:100%;
+}
+
+.GameDescription {
+  /* border: honeydew dashed; */
+  position: fixed;
+  z-index: 3;
+  text-align: center;
+  font-size: 20px;
+  max-width: 50%;
+  min-width: 400px;
+  max-height: 500px;
+  background-image: url(./components/images/textbackground.png);
+  background-repeat: no-repeat;
+  opacity: .85;
+  padding: 2%;
+  background-size: 100% 100%;
+  font-family: matisse pro;
+  line-height: 1.5;
+  color:rgb(199, 175, 108);
+  overflow: auto;
+ 
+}
+
+/* .GameDescriptionBG{
+  position: fixed;
+  z-index: 2;
+  text-align: center;
+  font-size: 20px;
+  max-width: 50%;
+  min-width: 400px;
+  max-height: 500px;
+  background-image: url(./components/images/textbackground.png);
+  background-repeat: no-repeat;
+  opacity: .85;
+  padding: 2%;
+  background-size: 100% 100%;
+  font-family: matisse pro;
+  line-height: 1.5;
+  color:rgba(199, 175, 108, 0);
+  overflow: auto;
+ 
+} */
+
+.GameDescriptionAlt {
+  position: fixed;
+  z-index: 2;
+  margin:center;
+  text-align: center;
+  font-size: max(20px,1vw);
+  max-width: 50%;
+  background-image: url(./components/images/textbackground.png);
+  background-repeat: no-repeat;
+  opacity: 1;
+  padding: 2%;
+  background-size: 100% 100%;
+  font-family: matisse pro;
+  line-height: 1.5;
+  color:rgb(199, 175, 108);
+  min-width: 38.8%;
+  min-height: 50.5%;
+}
+
+.wHolder {
+  /* border: blanchedalmond dashed; */
+  right:2%;
+  top:23%;
+  position: fixed;
+  z-index: 3;
+  width: 7%;
+  height:10%;
+  padding:2%;
+ }
+
+.widget {
+  position: sticky;
+  display: block;
+  margin: 30% 5%;
+  border:transparent;
+  height: 60%;
+  width: 95%;
+  min-width: 100px;
+  min-height: 40px;
+  color:rgb(240, 211, 131);
+  opacity:85%;
+  font-size: 20px;
+  font-family: matisse pro;
+  font-weight: bolder;
+  background-image: url(./components/images/textbackground.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: 0.1s;
+  
+}
+
+.selectedWidget {
+  position: sticky;
+  display: block;
+  margin: 30% 5%;
+  border:transparent;
+  height: 60%;
+  width: 90%;
+  min-width: 100px;
+  min-height: 40px;
+  color:rgb(131, 160, 240);
+  opacity:85%;
+  font-size: large;
+  font-family: matisse pro;
+  font-weight: bolder;
+  background-image: url(./components/images/textbackground.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  filter:invert(5%);
+  transform: scale(0.85);
+  transition: 0.2s;
+  
+}
+
+.widget:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.widget:active {
+  filter:invert(100%);
+  cursor: pointer;
+
+}
+
+.selectedWidget:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+}
+
+.selectedWidget:active {
+  filter:invert(100%);
+  cursor: pointer;
+
+}
+
+
+.sliderImage {
+  width:65vh;
+  height:35vh;
+  max-width: 95%;
+  max-height: 50%;
+  border-radius: 1%;
+}
+
+.slider {
+  position: relative;
+  height: 35%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.right-arrow {
+  position: absolute;
+  top:50%;
+  right: 0% ;
+  font-size: 2rem;
+  cursor:pointer;
+  user-select:none;
+  z-index: 5;
+}
+
+.right-arrow:hover {
+  transform:scale(1.1);
+  transition:0.1s;
+}
+
+.right-arrow:active{
+  filter: invert(85%);
+  transform:scale(1.05)
+}
+
+.left-arrow {
+  position: absolute;
+  top:50%;
+  left: 0%;
+  font-size: 2rem;
+  cursor:pointer;
+  z-index: 5;
+}
+
+.left-arrow:hover {
+  transform:scale(1.1);
+  transition:0.1s;
+}
+
+.left-arrow:active{
+  filter: invert(85%);
+  transform:scale(1.05)
+}
+
+.slide {
+  opacity: 0;
+}
+
+.slide.active {
+  opacity: 1;
+  transition: 1s ;
+  transform: scale(1.05)
+}
+
+.mediaButton {
+  position: sticky;
+  border:transparent;
+  width:20%;
+  margin: 1% 5%;
+  color:rgb(240, 211, 131);
+  opacity:85%;
+  font-size: min(1.2vw,22px);
+  font-family: matisse pro;
+  font-weight: bolder;
+  background-image: url(./components/images/textbackground.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: 0.1s;
+  padding: 0.5%;
+  
+}
+
+.mediaButton:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.mediaButton:active {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+
+.mediaBox {
+  /* border: 5px dashed rgb(74, 163, 156); */
+  height: 0;
+  padding-top: 56.25%;
+  position:relative;
+  
+}
+
+.react-player {
+  position:'absolute';
+  left:'2%';
+  top:'80%'; 
+  border:'3px blue dashed'
+}
+
+.descriptionHolder {
+  
+  border: 5px solid #009;
+  width: 100%;
+  height: 100%;
+  margin: 0 center;
+}
+
+.image-slider {
+  position: absolute;
+  top:0;
+}
+
+.GameplayGif {
+  width:50%;
+  
+
+  
+}
+
+/*What to do when screen is small*/
+
+@media screen and (max-width: 1100px) {
+  
+.dial {
+  width: 100px;
+  padding: 10px;
+  position:sticky;
+  margin-top: 150%;
+  margin-left: 25%;
+  z-index: 5;
+  
+}
+
+.logo {
+  transform: rotate(90deg);
+  width: 100px;
+  
+}
+
+.DialBox {
+  height: 1150px;
+  width:200px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom:-500px;
+  left:425px;
+  transform: rotate(-90deg);
+ }
+
+ .DialBG{
+  background-position: -100px
+ }
+
+ .wHolder {
+  right:5%;
+ }
+
+ .TitleHeader {
+  margin-left: 5%;
+}
+
+.GameDescription {
+  position: fixed;
+  z-index: 3;
+  text-align: center;
+  font-size: 18px;
+  max-width: 50%;
+  min-width: 400px;
+  max-height: 500px;
+  background-repeat: no-repeat; 
+  opacity: .85;
+  padding: 3%;
+  background-size: 100% 100%;
+  font-family: matisse pro;
+  line-height: 1.5;
+  color:rgb(199, 175, 108);
+  overflow: auto;
+ 
+}
+
+.GameDescriptionBG {
+  position: fixed;
+  z-index: 2;
+  text-align: center;
+  font-size: 18px;
+  max-width: 50%;
+  min-width: 400px;
+  max-height: 500px;
+  background-image: url(./components/images/textbackground.png);
+  background-repeat: no-repeat;
+  opacity: .85;
+  top:140px;
+  padding: 3.2%;
+  padding-top: 7%;
+  background-size: 100% 100%;
+  font-family: matisse pro;
+  line-height: 1.5;
+  color:rgba(1, 255, 65, 0);
+  overflow: hidden;
+}
+
+
+.GameDescriptionAlt {
+  position: fixed;
+  z-index: 2;
+  margin:center;
+  text-align: center;
+  font-size: 18px;
+  max-width: 50%;
+  min-width: 400px;
+  max-height: 500px;
+  background-image: url(./components/images/textbackground.png);
+  background-repeat: no-repeat;
+  opacity: 1;
+  padding: 2%;
+  background-size: 100% 100%;
+  font-family: matisse pro;
+  line-height: 1.5;
+  color:rgb(199, 175, 108);
+  overflow: auto;
+}
+
+.upArrow {
+  width: 60px;
+}
+
+.spacer {
+  padding: 40px;
+}
+.downArrow {
+  width: 60px;
+}
+
+.reel {
+  top: 7%;
+  }
+
+.mediaButton {
+  width: 100px;
+  font-size: large;
+  
+}
+}
+
+@media screen and (max-width: 900px) { 
+
+.wHolder {
+  left:2%;
+  width: 5%;
+  padding:0%;
+  }
+
+}
+
+@media screen and (max-height: 500px) { 
+
+.Contents{
+  overflow:auto;
+  
+}
+
+}
