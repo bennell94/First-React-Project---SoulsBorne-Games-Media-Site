@@ -1,5 +1,7 @@
 This is a website I created utilizing Javascript, HTML, CSS, and React. I worked on this project to utilize the knowledge I had been gaining regarding Front End development. It is intended to be in the style of a promotional/fan site, the focus being on the "SoulsBorne" video game series created by FromSoftware.
 
+You can navigate between the different games via the dial on the left side of the page and view different content for each game via the buttons on the right.
+
 Disclaimer: All images belong to their respective owners. Dark Souls, BloodBorne, and Elden Ring were created, developed, and are owned by FromSoftware.
 
 
