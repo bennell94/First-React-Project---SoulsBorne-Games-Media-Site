@@ -1,3 +1,10 @@
+This is a website I created utilizing Javascript, HTML, CSS, and React. I worked on this project to utilize the knowledge I had been gaining regarding Front End development. It is intended to be in the style of a promotional/fan site, the focus being on the SoulsBorne series created by FromSoftware.
+
+Disclaimer: All images belong to their respective owners. Dark Souls, BloodBorne, and Elden Ring were created, developed, and are owned by FromSoftware.
+
+
+============================================
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
